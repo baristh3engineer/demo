@@ -1,10 +1,6 @@
-# Step 1: Read car models from 'car_models.txt'
-with open('car_models.txt', 'r') as file:
-    car_models = [line.strip() for line in file.readlines()]
+from car_models import car_models
 
-# Step 2: Read descriptions from 'descriptions.txt'
-with open('descriptions.txt', 'r') as file:
-    descriptions = [line.strip() for line in file.readlines()]
+from descriptions import descriptions
 
 # Step 3: Check if lengths are the same
 if len(car_models) == len(descriptions):
